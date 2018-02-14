@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MLBHighlights_iPad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="sMS-Yb-yX3">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runs:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSO-mD-AAR">
+                                <rect key="frame" x="20" y="464" width="133" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Gr1-6J-N6o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="athletics" translatesAutoresizingMaskIntoConstraints="NO" id="fgC-BY-7sl">
+                                <rect key="frame" x="871" y="350" width="133" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="8cy-e8-0Cd"/>
+                                </constraints>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AXJ-M2-q0y">
+                                <rect key="frame" x="215" y="32" width="595" height="29"/>
+                                <segments>
+                                    <segment title="2010"/>
+                                    <segment title="2011"/>
+                                    <segment title="2012"/>
+                                    <segment title="2013"/>
+                                    <segment title="2014"/>
+                                    <segment title="2015"/>
+                                    <segment title="2016"/>
+                                    <segment title="2017"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="year:" destination="BYZ-38-t0r" eventType="valueChanged" id="R4c-Tu-zGa"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AvB-7h-Lde">
+                                <rect key="frame" x="215" y="74" width="595" height="29"/>
+                                <segments>
+                                    <segment title="Apr"/>
+                                    <segment title="May"/>
+                                    <segment title="Jun"/>
+                                    <segment title="Jul"/>
+                                    <segment title="Aug"/>
+                                    <segment title="Sep"/>
+                                    <segment title="Oct"/>
+                                    <segment title="Nov"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="month:" destination="BYZ-38-t0r" eventType="valueChanged" id="VCY-N7-t96"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bsd-db-iSH">
+                                <rect key="frame" x="20" y="121" width="984" height="29"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                    <segment title="10"/>
+                                    <segment title="11"/>
+                                    <segment title="12"/>
+                                    <segment title="13"/>
+                                    <segment title="14"/>
+                                    <segment title="15"/>
+                                    <segment title="16"/>
+                                    <segment title="17"/>
+                                    <segment title="18"/>
+                                    <segment title="19"/>
+                                    <segment title="20"/>
+                                    <segment title="21"/>
+                                    <segment title="22"/>
+                                    <segment title="23"/>
+                                    <segment title="24"/>
+                                    <segment title="25"/>
+                                    <segment title="26"/>
+                                    <segment title="27"/>
+                                    <segment title="28"/>
+                                    <segment title="29"/>
+                                    <segment title="30"/>
+                                    <segment title="31"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="day:" destination="BYZ-38-t0r" eventType="valueChanged" id="XbR-li-Ny8"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jrC-SR-F7N">
+                                <rect key="frame" x="338" y="542" width="348" height="29"/>
+                                <segments>
+                                    <segment title="AL"/>
+                                    <segment title="NL"/>
+                                    <segment title="ALL"/>
+                                    <segment title="Favorites"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="league:" destination="BYZ-38-t0r" eventType="valueChanged" id="iQU-v4-EaO"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FgD-RA-ZDN">
+                                <rect key="frame" x="20" y="598" width="984" height="29"/>
+                                <segments>
+                                    <segment title="AL"/>
+                                    <segment title="OAK"/>
+                                    <segment title="HOU"/>
+                                    <segment title="LAA"/>
+                                    <segment title="SEA"/>
+                                    <segment title="TEX"/>
+                                    <segment title="CWS"/>
+                                    <segment title="CLE"/>
+                                    <segment title="DET"/>
+                                    <segment title="KC"/>
+                                    <segment title="MIN"/>
+                                    <segment title="BAL"/>
+                                    <segment title="BOS"/>
+                                    <segment title="NYY"/>
+                                    <segment title="TB"/>
+                                    <segment title="TOR"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="team:" destination="BYZ-38-t0r" eventType="valueChanged" id="NPZ-O9-cTb"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5GP-Vd-uyB">
+                                <rect key="frame" x="20" y="634" width="984" height="29"/>
+                                <segments>
+                                    <segment title="NL"/>
+                                    <segment title="ARI"/>
+                                    <segment title="COL"/>
+                                    <segment title="LAD"/>
+                                    <segment title="SD"/>
+                                    <segment title="SF"/>
+                                    <segment title="CHC"/>
+                                    <segment title="CIN"/>
+                                    <segment title="MIL"/>
+                                    <segment title="PIT"/>
+                                    <segment title="STL"/>
+                                    <segment title="ATL"/>
+                                    <segment title="MIA"/>
+                                    <segment title="NYM"/>
+                                    <segment title="PHI"/>
+                                    <segment title="WSH"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="teamsSecondRow:" destination="BYZ-38-t0r" eventType="valueChanged" id="RWw-RN-4i5"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iL-iZ-Hgw">
+                                <rect key="frame" x="427" y="705" width="102" height="30"/>
+                                <state key="normal" title="Play Highlights">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gmC-da-lM2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angels" translatesAutoresizingMaskIntoConstraints="NO" id="bcy-8D-0DC">
+                                <rect key="frame" x="20" y="350" width="133" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="5ub-WH-wbS"/>
+                                    <constraint firstAttribute="width" constant="133" id="gdw-eV-85o"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="vKo-V1-wFU">
+                                <rect key="frame" x="494" y="376" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runs:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFs-bS-PdN">
+                                <rect key="frame" x="871" y="464" width="133" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FgD-RA-ZDN" firstAttribute="trailing" secondItem="5GP-Vd-uyB" secondAttribute="trailing" id="0ZU-cw-the"/>
+                            <constraint firstItem="bcy-8D-0DC" firstAttribute="trailing" secondItem="SSO-mD-AAR" secondAttribute="trailing" id="1cc-zP-GdI"/>
+                            <constraint firstItem="bsd-db-iSH" firstAttribute="leading" secondItem="FgD-RA-ZDN" secondAttribute="leading" id="4gM-jq-kAT"/>
+                            <constraint firstItem="FgD-RA-ZDN" firstAttribute="top" secondItem="jrC-SR-F7N" secondAttribute="bottom" constant="28" id="4tv-eY-ztp"/>
+                            <constraint firstItem="bsd-db-iSH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6dV-Do-2hT"/>
+                            <constraint firstItem="sMS-Yb-yX3" firstAttribute="centerY" secondItem="bcy-8D-0DC" secondAttribute="centerY" id="866-hq-O0J"/>
+                            <constraint firstItem="sMS-Yb-yX3" firstAttribute="leading" secondItem="SSO-mD-AAR" secondAttribute="leading" constant="-20" id="ABr-BV-vei"/>
+                            <constraint firstItem="bcy-8D-0DC" firstAttribute="bottom" secondItem="fgC-BY-7sl" secondAttribute="bottom" id="Af6-qD-h6e"/>
+                            <constraint firstItem="bsd-db-iSH" firstAttribute="trailing" secondItem="FgD-RA-ZDN" secondAttribute="trailing" id="Aqi-aH-xw8"/>
+                            <constraint firstItem="bcy-8D-0DC" firstAttribute="top" secondItem="fgC-BY-7sl" secondAttribute="top" id="DoS-Th-a7W"/>
+                            <constraint firstItem="AvB-7h-Lde" firstAttribute="top" secondItem="AXJ-M2-q0y" secondAttribute="bottom" constant="14" id="Dvr-kv-LK3"/>
+                            <constraint firstItem="bcy-8D-0DC" firstAttribute="leading" secondItem="SSO-mD-AAR" secondAttribute="leading" id="FUC-1h-Kcu"/>
+                            <constraint firstItem="0iL-iZ-Hgw" firstAttribute="top" secondItem="5GP-Vd-uyB" secondAttribute="bottom" constant="43" id="G8J-XI-IY7"/>
+                            <constraint firstItem="AXJ-M2-q0y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="215" id="GN2-c2-E76"/>
+                            <constraint firstItem="FgD-RA-ZDN" firstAttribute="leading" secondItem="5GP-Vd-uyB" secondAttribute="leading" id="Hf2-Dk-v2a"/>
+                            <constraint firstItem="bsd-db-iSH" firstAttribute="top" secondItem="AvB-7h-Lde" secondAttribute="bottom" constant="19" id="Hml-Qg-Sch"/>
+                            <constraint firstItem="SSO-mD-AAR" firstAttribute="top" secondItem="bcy-8D-0DC" secondAttribute="bottom" constant="25" id="IpO-MW-dlB"/>
+                            <constraint firstItem="AXJ-M2-q0y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="KVM-ZY-PPd"/>
+                            <constraint firstAttribute="trailing" secondItem="sMS-Yb-yX3" secondAttribute="trailing" id="NvS-wd-zh3"/>
+                            <constraint firstItem="AXJ-M2-q0y" firstAttribute="leading" secondItem="AvB-7h-Lde" secondAttribute="leading" id="Pej-mT-kwL"/>
+                            <constraint firstItem="jrC-SR-F7N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="338" id="Reu-EB-Gom"/>
+                            <constraint firstItem="jrC-SR-F7N" firstAttribute="centerX" secondItem="FgD-RA-ZDN" secondAttribute="centerX" id="Rpj-K0-HHo"/>
+                            <constraint firstItem="SSO-mD-AAR" firstAttribute="firstBaseline" secondItem="XFs-bS-PdN" secondAttribute="firstBaseline" id="UfW-hU-tHh"/>
+                            <constraint firstItem="sMS-Yb-yX3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Wf7-Ly-7qg"/>
+                            <constraint firstItem="fgC-BY-7sl" firstAttribute="leading" secondItem="XFs-bS-PdN" secondAttribute="leading" id="XfS-z5-c75"/>
+                            <constraint firstItem="sMS-Yb-yX3" firstAttribute="trailing" secondItem="XFs-bS-PdN" secondAttribute="trailing" constant="20" id="Zfe-5T-4Gp"/>
+                            <constraint firstItem="5GP-Vd-uyB" firstAttribute="top" secondItem="FgD-RA-ZDN" secondAttribute="bottom" constant="8" symbolic="YES" id="dsi-lM-p6W"/>
+                            <constraint firstItem="fgC-BY-7sl" firstAttribute="trailing" secondItem="XFs-bS-PdN" secondAttribute="trailing" id="gWg-TI-Wzu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0iL-iZ-Hgw" secondAttribute="bottom" constant="33" id="i0f-V7-hkA"/>
+                            <constraint firstItem="SSO-mD-AAR" firstAttribute="baseline" secondItem="XFs-bS-PdN" secondAttribute="baseline" id="kwa-ZQ-HNz"/>
+                            <constraint firstItem="0iL-iZ-Hgw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="427" id="mDY-LN-yh6"/>
+                            <constraint firstItem="AXJ-M2-q0y" firstAttribute="trailing" secondItem="AvB-7h-Lde" secondAttribute="trailing" id="tTZ-wq-ywz"/>
+                            <constraint firstItem="sMS-Yb-yX3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uwi-kA-dE8"/>
+                            <constraint firstItem="sMS-Yb-yX3" firstAttribute="centerX" secondItem="jrC-SR-F7N" secondAttribute="centerX" id="vGz-pr-6Ft"/>
+                            <constraint firstItem="sMS-Yb-yX3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xqb-aJ-BnB"/>
+                            <constraint firstItem="AvB-7h-Lde" firstAttribute="centerX" secondItem="bsd-db-iSH" secondAttribute="centerX" id="y2X-3g-63i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activity" destination="vKo-V1-wFU" id="Dvd-Y9-cGL"/>
+                        <outlet property="americanLeague" destination="FgD-RA-ZDN" id="M1O-5P-umO"/>
+                        <outlet property="away" destination="fgC-BY-7sl" id="q1a-He-K7U"/>
+                        <outlet property="awayTeamRuns" destination="XFs-bS-PdN" id="B70-k3-6SE"/>
+                        <outlet property="home" destination="bcy-8D-0DC" id="k9T-0X-TCd"/>
+                        <outlet property="homeTeamRuns" destination="SSO-mD-AAR" id="jTu-UC-ctu"/>
+                        <outlet property="nationalLeague" destination="5GP-Vd-uyB" id="wUr-Eo-FHk"/>
+                        <outlet property="play_highlights" destination="0iL-iZ-Hgw" id="xcG-xU-Qbm"/>
+                        <segue destination="MNH-ud-DQD" kind="show" identifier="fav" id="a8Q-Xy-0e8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.984375" y="35.9375"/>
+        </scene>
+        <!--Favorites Highlights-->
+        <scene sceneID="bPp-aC-ORI">
+            <objects>
+                <tableViewController id="Uct-VF-yaD" customClass="FavoritesTableViewController" customModule="MLBHighlights_iPad" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JYY-ia-UU9">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="hNT-Wp-bU6">
+                            <rect key="frame" x="0.0" y="72" width="1024" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="JR8-QR-jz0" detailTextLabel="lZs-FT-2oJ" style="IBUITableViewCellStyleValue1" id="ZRh-3x-Bwq">
+                                <rect key="frame" x="0.0" y="28" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZRh-3x-Bwq" id="KcH-Ae-YtA">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JR8-QR-jz0">
+                                            <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lZs-FT-2oJ">
+                                            <rect key="frame" x="960" y="12" width="44" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Uct-VF-yaD" id="6Wh-qR-ZUy"/>
+                            <outlet property="delegate" destination="Uct-VF-yaD" id="ysD-Ip-2k9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Favorites Highlights" leftItemsSupplementBackButton="YES" id="Ge8-Fz-oxc">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="1MI-DU-vu5"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="ui8-73-0Uc">
+                            <connections>
+                                <action selector="back:" destination="Uct-VF-yaD" id="8Ny-TT-Rp6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activity" destination="hNT-Wp-bU6" id="Kmv-Va-JIN"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="viC-6H-M4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="36"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NT4-SU-n7M">
+            <objects>
+                <navigationController id="MNH-ud-DQD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Xr-KT-Ztc">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Uct-VF-yaD" kind="relationship" relationship="rootViewController" id="zqo-YJ-Eu4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="79h-GO-xU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1280" height="720"/>
+        <image name="angels" width="150" height="100"/>
+        <image name="athletics" width="150" height="100"/>
+    </resources>
+</document>
